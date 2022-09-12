@@ -1,6 +1,6 @@
 
 
-export class Appoitment{
+class Appoitment {
     // Private parameters
     #startedAt
     #endedAt
@@ -8,13 +8,13 @@ export class Appoitment{
 
     constructor(startedAt, endedAt, customer){
 
-        this.#staterdAt = startedAt
+        this.#startedAt = startedAt
         this.#endedAt = endedAt
         this.#customer = customer
 
     }
 
-    // set getters
+    // create getters
 
     getStartedAt() {
         return this.#startedAt
@@ -27,6 +27,26 @@ export class Appoitment{
     getCustomer() {
         return this.#customer
     }
+
+    // create getters 
+
+    setStartedAt(newStartedAt) {
+        this.#startedAt = newStartedAt
+    }
+
+    setEndedAt(newEndedAt) {
+        this.#endedAt = newEndedAt
+    }
+
+    setCustomer(newCustomer) {
+        this.#customer = newCustomer
+    }
+
+    
 }
 
+
+// let appoitment1 = new Appoitment("10-20-2022", "10-20-2022", "Jose Cumbe")
+
+// console.log(appoitment1.getCustomer())
 
