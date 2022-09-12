@@ -1,6 +1,6 @@
 
 
-class Appoitment {
+export class Appointment {
     // Private parameters
     #startedAt
     #endedAt
